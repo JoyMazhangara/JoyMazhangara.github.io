@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Mazhangara - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-bar" id="nav-list">
+            <li><a href="#about-me" style="color:white; text-decoration:none">About Me</a></li>
+            <li><a href="https://github.com/JoyMazhangara" style="color:white; text-decoration:none">GitHub</a></li>
+            <li><a href="#contact-me" style="color:white; text-decoration:none">Contact</a></li>
+          </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-info">
+            <h1 id="name">Joy Mazhangara</h1>
+            <p id="intro-bio">Backend Web Developer,  Small business owner, Lover of people. </p>
+            <button class="button">Hire Me</button>
+        </div>
+        <div>
+            <img
+          class="coder-image"
+          src="joyimg.png"
+          alt="working illustration of a woman"
+            />
+        </div>
+    </section>
+    <h2 id="about-me">About Me</h2>
+    <section class="about-me">
+        <div id='left-me'>
+            <image
+            class="profile-pic"
+            src="portfolio.png"
+            alt="joy mazhangara picture"
+            />
+        </div>
+        <div id="right-me">
+            <div>
+                <p class="about-me-text">
+                    Hi there! My name is Joy Mazhangara. I got my start in coding through a couple computer science classes in college
+            as well the robust Bright Paths Program (boot camp). The projects featured on this page come from my time in the boot camp.
+                </p>
+            </div>
+            <h3>Skills</h3>
+            <ul class="listed-skills">
+                <li><i class="fab fa-html5"></i>html</li>
+                <li><i class="fab fa-css3"></i>css</li>
+                <li><i class="fab fa-js-square"></i>javascript</li>
+                <li><i class="fab fa-node-js"></i>node.js</li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <div>
+            <h4 class="section-heading" data-outline="Projects">Projects</h4>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left-item">
+                        <div class="img">
+                            <img src="inspire-you-website.PNG"/>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <h2 class="project-title">Inspire You</h2>
+                        <h3 class="project-sub-title">A user-friendly, motivational website</h3>
+                        <p class="project-desc">Inspire You features a collection of people and stories to encourage and motivate users on their journey to their best selves. Built with technologies like express, axios, and javascript.</p>
+                        <a href="https://github.com/JoyMazhangara/capstone1"><button id="inspire-you-btn" class="button">Learn More</button> </a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <h5 id="contact-me" class="section-heading">Contact Me</h5>
+        <div class="contact-cards">
+            <div class="email">
+                <i class="fas fa-at"></i>
+                <div>
+                    <p class="contact-details">fjmazhangara@gmail.com</p>
+                </div>
+            </div>
+            <div class="email">
+                <i class="fab fa-github-square"></i>
+                <div>
+                    <p class="contact-details">GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        const inspireYouBtn = document.getElementById('inspire-you-btn');
+        inspireYouBtn.addEventListener('click', () => {
+            let window = window.open("https://github.com/JoyMazhangara/capstone1", "Inspire You App", "popup")
+        })
+    </script>
+
+</body>
+</html>
